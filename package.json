@@ -52,6 +52,8 @@
       "eslint --fix",
       "git add"
     ],
-    "*.{js,css,md}": "prettier --write"
+    "*.{js,css,md}": ["prettier --config .prettierrc --write",
+      "eslint --fix",
+      "git add"]
   }
 }
